@@ -8,15 +8,18 @@ import java.util.concurrent.TimeUnit;
 public class Main2 {
 	public static void main(String[] args) throws Exception{
 		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy", Locale.UK);
+		
+		
 		System.out.println("Primeira data: ");
 		Scanner dh = new Scanner(System.in); 
 		String aux = dh.nextLine();
+		
 		System.out.println("Segunda data:");
 		Scanner dh1 = new Scanner(System.in); 
 		String aux1 = dh1.nextLine();
 		
-		Date firstDate = data.parse(aux);
-        Date secondDate = data.parse(aux1);
+		Date firstDate = data.parse(aux);//data antiga
+        Date secondDate = data.parse(aux1);//data nova
 
         long diff = secondDate.getTime() - firstDate.getTime();
 
