@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class Main2 {
 	public static void main(String[] args) throws Exception{
 		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy", Locale.UK);
 		System.out.println("Primeira data: ");
