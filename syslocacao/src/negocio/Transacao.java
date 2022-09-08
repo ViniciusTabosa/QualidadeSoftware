@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Transacao {
 	protected Cliente cliente;
 	protected Filme filme;
-	protected Locacao locar;
+	//protected Locacao locar;
 	
 	protected ArrayList<Locacao> alugados;
 	
@@ -19,5 +19,13 @@ public class Transacao {
 			valor +=locacao.filme.preco;
 		}
 		return valor;
+	}
+	
+	public boolean verificarEstado(String data) {
+		for(Locacao locacao : alugados) {
+			
+		}
+		
+		return null;
 	}
 }
