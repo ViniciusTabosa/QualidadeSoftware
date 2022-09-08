@@ -23,7 +23,7 @@ public class Transacao {
 	
 	public boolean verificarEstado(String data) {
 		for(Locacao locacao : alugados) {
-			
+			//
 		}
 		
 		return null;
