@@ -29,6 +29,6 @@ public class Main {
 	
 		t1.alugados.add(loc1);
 	
-		c1.verificarEstado("05/08/2022");
+//		c1.verificarEstado("05/08/2022");
 	}
 }

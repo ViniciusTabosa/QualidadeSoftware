@@ -1,5 +1,5 @@
 package negocio;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 
 import java.time.format.*;
 import java.util.Date;
@@ -11,13 +11,17 @@ public class Locacao {
 	protected Filme filme;
 	protected double aluguel;
 	protected String data;
+	protected String hora;
 	//protected long qtdDias;
 	
-	public void alugarFilme(Cliente cliente, Filme filme, String data) /*throws Exception*/{
+	public void alugarFilme(Cliente cliente, Filme filme, String data, String hora) /*throws Exception*/{
 			this.cliente = cliente;
 			this.filme = filme;
 			this.data = data;
-		
+			this.hora = hora;
+	}
+	
+	
 //		SimpleDateFormat dataFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.UK);//recebendo a data do aluguel atual
 		
 //		Date dataAnterior = dataFormat.parse(data);//data antiga
@@ -31,8 +35,6 @@ public class Locacao {
 //        this.qtdDias = qtdDias;
         
 //        System.out.println("The difference in days is : "+diffrence);
-        
-	}
 	
 	public void setAluguel(float aluguel) {
 		this.aluguel = aluguel;

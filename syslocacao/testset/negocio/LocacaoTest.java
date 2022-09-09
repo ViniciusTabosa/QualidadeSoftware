@@ -22,8 +22,6 @@ public class LocacaoTest {
 		c1 = new Cliente("mario", 1);
 		f1 = new Filme("mib", Genero.FICCAO);
 		
-		//System.out.println(c1.nome);
-		//System.out.println(f1.nome);
 		
 		loc1 = new Locacao();
 		
@@ -38,10 +36,10 @@ public class LocacaoTest {
 
 	@Test
 	public void deve_alugar_filme() {
-		loc1.alugarFilme(c1, f1, "07/09/2022");
+		loc1.alugarFilme(c1, f1, "07/09/2022", "03:22:39");
 		
 		t1.alugados.add(loc1);
-		assertTrue(t1.alugados.get(0).cliente.nome == "aefe");
+		assertTrue(t1.alugados.get(0).hora == "03:22:39");
 //		assertEquals(t1.alugados.get(0).data, "07/09/2022");
 //		System.out.println(t1.alugados.get(0).cliente.nome);
 	}

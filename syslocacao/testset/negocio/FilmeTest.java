@@ -23,7 +23,7 @@ public class FilmeTest {
 		f1 = new Filme("mib", Genero.FICCAO);
 		loc1 = new Locacao();
 		t1 = new Transacao();
-		loc1.alugarFilme(c1, f1, "");
+		loc1.alugarFilme(c1, f1, "07/09/2022", "02:22:22");
 	}
 
 	@After

@@ -21,11 +21,11 @@ public class Transacao {
 		return valor;
 	}
 	
-	public boolean verificarEstado(String data) {
-		for(Locacao locacao : alugados) {
-			//
-		}
-		
-		return null;
-	}
+//	public boolean verificarEstado(String data) {
+//		for(Locacao locacao : alugados) {
+//			//
+//		}
+//		
+//		return null;
+//	}
 }
