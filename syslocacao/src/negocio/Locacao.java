@@ -1,42 +1,24 @@
 package negocio;
-//import java.text.SimpleDateFormat;
 
-import java.time.format.*;
-import java.util.Date;
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
+import java.time.format.DateTimeFormatter;
 
 public class Locacao {
 	protected Cliente cliente;
 	protected Filme filme;
 	protected double aluguel;
-	protected String data;
-	protected String hora;
-	//protected long qtdDias;
+	protected DateTimeFormatter data;
+	protected DateTimeFormatter hora;
 	
-	public void alugarFilme(Cliente cliente, Filme filme, String data, String hora) /*throws Exception*/{
+	
+	public void alugarFilme(Cliente cliente, Filme filme){
 			this.cliente = cliente;
 			this.filme = filme;
-			this.data = data;
-			this.hora = hora;
+			this.data = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+			this.hora = DateTimeFormatter.ofPattern("HH:mm:ss");
 	}
 	
 	
-//		SimpleDateFormat dataFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.UK);//recebendo a data do aluguel atual
-		
-//		Date dataAnterior = dataFormat.parse(data);//data antiga
-//        Date dataAtual = dataFormat.parse(aux1);//data nova
-		
-//        long diff = dataAtual.getTime() - dataAnterior.getTime();
-
-//        TimeUnit time = TimeUnit.DAYS; 
-//        qtdDias = time.convert(diff, TimeUnit.MILLISECONDS);
-        
-//        this.qtdDias = qtdDias;
-        
-//        System.out.println("The difference in days is : "+diffrence);
-	
-	public void setAluguel(float aluguel) {
+	public void setAluguel(double aluguel) {
 		this.aluguel = aluguel;
 	}
 }
